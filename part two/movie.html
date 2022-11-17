@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+  <style>
+
+    img {
+      max-width: 70%;
+    }
+
+    .image-center {
+      display: block;
+      margin: 10px auto;
+    }
+
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <h1  class="text-center">Welcome to my website.</h1>
+  <form id="movie-form">
+    Title: <input type= "text" required id="title" />
+    Rating: <input type = "text" required  id="rating"/>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Rating</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="movie-info">
+
+    </tbody>
+  </table>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="movie.js">
+</script>
+</body>
+
+</html>
